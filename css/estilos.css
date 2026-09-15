@@ -2,3 +2,6 @@ nav ul{
   display:flex;
   justify-content:center
 }
+nav a{
+  text-decoration:none;
+}
