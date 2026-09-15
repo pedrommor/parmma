@@ -1,10 +1,13 @@
 *{
   font-family:Helvetica, Arial, sans-serif;
 }
+header{
+  text-align:center;
+}
 nav ul{
   list-style:none;
 }
-nav a{
+nav{
   text-decoration:none;
 }
 nav li:hover{
