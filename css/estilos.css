@@ -25,3 +25,9 @@ font-family: Georgia, Times, serif;
 font-weight:bolder;
 text-decoration:none;
 }
+.menor{
+font-weight:8px;
+}
+span{
+  color: orange;
+}
