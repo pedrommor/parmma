@@ -45,11 +45,15 @@ table {
 
 header{
   text-align:center;
+  padding: 20px;
 }
-nav ul{
+nav ul li{
   list-style:none;
+  margin: 10px;
+  text-decoration: none;
 }
 nav{
+padding: 15px;
   text-decoration:none;
 }
 nav li:hover{
@@ -68,8 +72,10 @@ font-weight:bolder;
 text-decoration:none;
 }
 .menor{
-font-weight:x-smaller;
+padding: 20px;
+font-size:xx-small;
 }
 span{
-  color: orange;
+
+color: orange;
 }
