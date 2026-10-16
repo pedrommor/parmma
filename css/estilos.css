@@ -59,6 +59,8 @@ h2{
 	line-height: 1.6em;
 }
 body{
+	place-content: center;
+	
 	width: 70%;
 	line-height: 1.6em;
 	font-family: Helvetica, Arial, sans-serif;
