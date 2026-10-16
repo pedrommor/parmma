@@ -42,40 +42,78 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*fin reset*/
 header{
   text-align:center;
   padding: 20px;
 }
-nav ul li{
-  list-style:none;
-  margin: 10px;
-  text-decoration: none;
-}
-nav{
-padding: 15px;
-  text-decoration:none;
-}
-nav li:hover{
-  text-decoration:underline;
-  color: blue;
-}
-.cabecera{
-  font-size: 1.5em;
+h1{
+  font-size: 2.5em;
   color:red;
   font-weight:bolder;
 }
-.index{
+h2{
+	font-size: 2.5em;
+	font-weight: bolder;
+	margin:15px;
+	line-height: 1.6em;
+}
+body{
+	width: 70%;
+	line-height: 1.6em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+ul li{
+  list-style:none;
+  margin: 10px;
+  
+}
+a:link{
+	text-decoration: none;
+	color:black;
+}
+nav{
+  padding: 15px;
+  text-decoration:none; 
+  
+}
+nav li:hover :not(.serifa){
+  text-decoration:underline;
+  color: black;
+}
+data{
+	text-transform: uppercase;
+	font-size: 8px;
+}
+/*.cabecera{
+  font-size: 1.5rem;
+  color:red;
+  font-weight:bolder;
+}*/
+.activo{
 font-style:oblique;
-font-family: Georgia, Times, serif;
 font-weight:bolder;
 text-decoration:none;
+}
+.serifa{
+	font-family: Georgia, Times, serif;
+
+}
+.author{
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+.centrado{
+	text-align: center;
+	
 }
 .menor{
 padding: 20px;
 font-size:xx-small;
 }
 span{
-
 color: orange;
+}
+.negrita{
+	font-weight: bold;
 }
