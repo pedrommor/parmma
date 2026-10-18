@@ -72,21 +72,14 @@ h3{
 }
 body{
 	font-family: Helvetica, Arial, sans-serif;
-	display:flex;
 	min-height: 100vh;
 	
-	/*align-content:center;
-	justify-items: center;*/
-	flex-direction: column;
 }
 main{
-	display: grid;
-	place-content: center;
-	justify-items: center;
-	max-width: 1100px;
-	margin: 0 auto;
+	width: 70%;
+	margin: 10px auto;
 	padding: 20px 20px;
-	box-sizing: border-box;
+	
 	line-height: 1.6em;
 	color:rgb(0, 0, 25);
 	}
@@ -103,7 +96,7 @@ article{
 	padding: 10px;
 }
 img{
-	 width:"700";
+	 width:100%;
 	 height:"300";
 }
 footer{
@@ -168,13 +161,13 @@ p{
 padding: 20px;
 font-size:xx-small;
 }
-.color{
+.destacado{
 color: orange;
 text-decoration: none;
 }
 .negrita{
 	font-weight: bold;
-	width: 60%;
+	width: 70%;
 }
 .special{
 	font-size: small;
@@ -183,8 +176,6 @@ text-decoration: none;
 hgroup{
 	
 	line-height: 1.6em;
-	display:flex;
-	flex-direction: column;
 	text-align: center;
 }
 li time:not(li a time), p time:not(p time[datetime="2016-10-17"]){
