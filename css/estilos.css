@@ -126,7 +126,7 @@ figure{
 }
 blockquote{
 	margin-left: 20px;
-	margin-right: 40px;
+	margin-right: 50px;
 }
 
 .serifa{
@@ -177,10 +177,7 @@ hgroup{
 	line-height: 1.6em;
 	text-align: center;
 }
-li time:not(li a time), p time:not(p time[datetime="2016-10-17"]){
-	color: rgb(37, 150, 190);
-	font-weight: 600;
-}
+
 
 .mayus{
 	margin-top: 10px;
@@ -189,21 +186,19 @@ li time:not(li a time), p time:not(p time[datetime="2016-10-17"]){
 	font-size: 0.8em;
 }
 ol{
-	list-style-image: url(/img/idioma.png);
+	list-style-image: url(img/idioma.png);
 }
 
 .cuadrado{
 	list-style-type: square;
+	color: black;
 }
 
-ul li:not(nav li):not(ul.cuadrado li), 
-ol li:not(nav li):not(ul.cuadraro li){
+ul li:not(nav li) 
+{
 	color: #d03b00;
 }
-ul li:not(nav li):not(ul.cuadrado li)::marker,
-ol li:not(nav li):not(ul.cuadrado li)::marker{
-	color:rgb(0, 0, 25);
-}
+
 a[href*="flaticon.es"] {
 	color:rgb(255, 255, 255);
 	text-decoration: none;
