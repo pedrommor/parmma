@@ -126,11 +126,9 @@ figure{
 }
 blockquote{
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 40px;
 }
-q{
-	font-style: italic;
-}
+
 .serifa{
 	font-family: Georgia,'Times New Roman', Times, serif;
 
@@ -171,6 +169,7 @@ text-decoration: none;
 }
 .reducido{
 	font-size: small;
+	font-style: italic;
 }
 /* listado-nobel-literatura */
 hgroup{
