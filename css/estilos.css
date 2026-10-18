@@ -75,8 +75,8 @@ body{
 	display:flex;
 	min-height: 100vh;
 	
-	align-content:center;
-	justify-items: center;
+	/*align-content:center;
+	justify-items: center;*/
 	flex-direction: column;
 }
 main{
@@ -187,10 +187,11 @@ hgroup{
 	flex-direction: column;
 	text-align: center;
 }
-li time{
+li time:not(li a time), p time:not(p time[datetime="2016-10-17"]){
 	color: rgb(37, 150, 190);
+	font-weight: 600;
 }
- 
+
 .mayus{
 	margin-top: 10px;
 	margin-bottom: 40px;
@@ -198,24 +199,30 @@ li time{
 	font-size: 0.8em;
 }
 ol{
-
 	list-style-image: url(/img/idioma.png);
-	
-	
 }
 
-ol li ul{
+.cuadrado{
 	list-style-type: square;
-	
 }
-ul li:not(nav li){
+
+ul li:not(nav li):not(ul.cuadrado li), 
+ol li:not(nav li):not(ul.cuadraro li){
 	color: #d03b00;
+}
+ul li:not(nav li):not(ul.cuadrado li)::marker,
+ol li:not(nav li):not(ul.cuadrado li)::marker{
+	color:rgb(0, 0, 25);
 }
 a[href*="flaticon.es"] {
 	color:rgb(255, 255, 255);
 	text-decoration: none;
-
 }
 a[href*="flaticon.es"]:hover{
 	color: rgb(240,93,80);
+}
+/* motivacion-premios*/
+h4{
+	text-align: left;
+	color: #d03b00;
 }
