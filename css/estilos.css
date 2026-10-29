@@ -1,4 +1,3 @@
-*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,39 +42,53 @@ table {
 	border-spacing: 0;
 }
 /*fin reset*/
-/* devuelvo la cursiva nativa a cite tras el reset de meyer*/
+/* devuelvo la cursiva nativa a cite tras el reset de meyer
 cite{
 	font-style: italic;
+}*/
+.principal{
+	font-family: Helvetica, Arial, sans-serif;
+	min-height: 100vh;
 }
-header{
+a{
+	text-decoration: none;
+}
+.cabecera{
   text-align:center;
   padding: 20px;
+  text-decoration: none;
 }
-h1 a{
-  font-size: 2.5em;
-  font-weight:bolder;
-  color: rgb(240,93,80);
+
+.cabecera_titulo{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 2.5em;
+  	font-weight:bolder;
+  	color: rgb(240,93,80);
 }
-h1:hover a{
+.cabecera_titulo:hover{
 
 	color: rgba(240,93,80,0.5);
 }
-h2{
-	font-size: 2.0em;
-	font-weight: bolder;
-	margin:15px;
-	line-height: 1.6em;
+.cabecera_menu{
+  padding: 15px;  
+  
 }
-h3{
-	font-size: 1.2em;
-	font-weight: bold;
+.cabecera_menu--lista{
+	padding: 15px;	
 }
-body{
-	font-family: Helvetica, Arial, sans-serif;
-	min-height: 100vh;
-	
+.cabecera_menu--activo{
+	font-style:oblique;
+	font-weight:700;
+	padding:5px;	
 }
-main{
+.cabecera_menu--link{
+	padding: 5px;	
+	color: rgb(0, 0, 25);
+}
+.cabecera_menu--link:hover{
+  color: rgba(0, 0, 25, 0.5);
+}
+.container{
 	width: 70%;
 	margin: 10px auto;
 	padding: 20px 20px;
@@ -85,14 +98,75 @@ main{
 	line-height: 1.6em;
 	color:rgb(0, 0, 25);
 	}
-nav{
-  padding: 15px;
-  text-decoration:none; 
-  
+.container__primer-post--centrado{
+	text-align: center;
+	
 }
-nav li:hover a{
-  text-decoration:none;
-  color: rgba(0, 0, 25, 0.5);
+.container__primer-post--titular{
+	font-size: 2.0em;
+	font-weight: bolder;
+	margin:15px;
+	line-height: 1.6em;
+}
+.container__primer-post--siglas{
+	text-decoration: none;
+}
+.container__primer-post--author
+{
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+.container__primer-post--image,
+.video-container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:100%;
+}
+.container__primer-post--fecha{
+	text-transform: uppercase;
+	font-size: 8px;
+}
+.container__primer-post--pie-foto{
+color: #d03b00;
+text-decoration: none;
+}
+.container__primer-post--parrafo-negrita{
+	font-weight: bold;
+	margin-left: 5%;
+	width: 70%;
+}
+p{
+	padding: 10px;
+}
+.container__primer-post--menor-pie-foto{
+padding: 20px;
+font-size:xx-small;
+}
+.container__segundo-post--titular, 
+.container__tercer-post--titular-uno, 
+.container__tercer-post--titular-dos,
+.container__cuarto-post--titular
+{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.container__cuarto-post--block{
+	margin-left: 20px;
+	margin-right: 50px;
+}
+
+.container__segundo-post--serifa,
+.container__tercer-post--serifa,
+.container__cuarto-post--serifa
+{
+	font-family: Georgia,'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+/*.container{
+	padding: 10px;
 }
 article{
 	padding: 10px;
@@ -100,89 +174,31 @@ article{
 img{
 	 width:100%;
 	 
+}*/
+.container__cuarto-post--parrafo-reducido{
+	font-size: small;
+}
+.container__cuarto-post--reducido{
+	font-size: small;
+	font-style: italic;
 }
 footer{
-	height: 15vh ;
+	height: 15vh;
 	text-align: center;
 	align-content: center;
 	background-color: rgb(0, 0, 25);
 	color:rgb(255, 255, 255);
 }
 
-li{	
-	padding: 5px;
-}
-a{
-	text-decoration: none;
-	color:rgb(0, 0, 25);
-	
-}
 
-abbr{
-	text-decoration: none;
-}
-figure{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-blockquote{
-	margin-left: 20px;
-	margin-right: 50px;
-}
 
-.serifa{
-	font-family: Georgia,'Times New Roman', Times, serif;
-
-}
-
-p time[datetime="2016-10-17"]{
-	text-transform: uppercase;
-	font-size: 8px;
-}
-p{
-	padding: 10px;
-}
-.activo{
-	font-style:oblique;
-	font-weight:700;
-	text-decoration:none;
-}
-
-.author{
-	margin-top: 20px;
-	font-size: 1.5em;
-}
-.centrado{
-	text-align: center;
-	
-}
-
-.menor{
-padding: 20px;
-font-size:xx-small;
-}
-
-.centrado{
-	display:flex;
-	justify-content: center;
-	flex-direction: column;
-}
-.negrita{
-	font-weight: bold;
-	width: 70%;
-}
-.reducido{
-	font-size: small;
-	font-style: italic;
-}
 /* listado-nobel-literatura */
 hgroup{
 	
 	line-height: 1.6em;
 	text-align: center;
 }
-.destacado{
+.destacado, .container__cuarto-post--inline-destacado{
 color: #d03b00;
 text-decoration: none;
 }
@@ -249,7 +265,6 @@ cite.serifa:not(article cite.serifa){
 }
 .video-container{
 
-	
 	width:50%;
 	cursor: pointer;
 	aspect-ratio: 16 / 9;
