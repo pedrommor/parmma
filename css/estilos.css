@@ -43,7 +43,7 @@ table {
 }
 /*fin reset*/
 /* devuelvo la cursiva nativa a cite tras el reset de meyer
-cite{
+cite{ pendiente de corregir
 	font-style: italic;
 }*/
 .principal{
@@ -117,7 +117,7 @@ a{
 	font-size: 1.5em;
 }
 .container__primer-post--image,
-.video-container
+.video-container/*pendiente arreglar*/
 {
 	display: flex;
 	flex-direction: column;
