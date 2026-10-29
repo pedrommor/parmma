@@ -48,6 +48,7 @@ cite{ pendiente de corregir
 }*/
 .principal{
 	font-family: Helvetica, Arial, sans-serif;
+	font-size:0.9em;
 	min-height: 100vh;
 }
 a{
@@ -95,7 +96,8 @@ a{
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	line-height: 1.6em;
+	line-height: 1.7em;
+	font-size: 0.9em;
 	color:rgb(0, 0, 25);
 	}
 .container__primer-post--centrado{
@@ -106,7 +108,7 @@ a{
 	font-size: 2.0em;
 	font-weight: bolder;
 	margin:15px;
-	line-height: 1.6em;
+	line-height: 1.7em;
 }
 .container__primer-post--siglas{
 	text-decoration: none;
@@ -134,7 +136,7 @@ text-decoration: none;
 }
 .container__primer-post--parrafo-negrita{
 	font-weight: bold;
-	margin-left: 5%;
+	
 	width: 70%;
 }
 p{
@@ -155,9 +157,17 @@ font-size:xx-small;
 .container__cuarto-post--block{
 	margin-left: 20px;
 	margin-right: 50px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container__segundo-post--serifa,
+.container__segundo-post--serifa{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size:0.8em;
+	font-style: italic;
+}
+.container__segundo-post--fecha{
+	font-size: 0.8em;
+}
 .container__tercer-post--serifa,
 .container__cuarto-post--serifa
 {
@@ -174,13 +184,16 @@ article{
 img{
 	 width:100%;
 	 
-}*/
+}
 .container__cuarto-post--parrafo-reducido{
 	font-size: small;
-}
-.container__cuarto-post--reducido{
+
+	
+}*/
+.container__cuarto-post--reducido, .container__cuarto-post--parrafo-reducido{
 	font-size: small;
 	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 footer{
 	height: 15vh;
