@@ -186,7 +186,8 @@ box-sizing: border-box;
 	font-size: 0.8em;
 }
 .container__tercer-post--serifa,
-.container__cuarto-post--serifa
+.container__cuarto-post--serifa,
+.container__lista-def--serifa
 {
 	font-family: Georgia,'Times New Roman', Times, serif;
 	font-style: italic;
@@ -234,7 +235,7 @@ hgroup{
 	align-items: center;
 
 }
-.destacado, .container__cuarto-post--inline-destacado{
+.container__cuarto-post--inline-destacado{
 color: #d03b00;
 text-decoration: none;
 }
@@ -266,7 +267,8 @@ text-decoration: none;
 
 
 .container__order-list--idioma,
-.container__order-list--time{
+.container__order-list--time,
+.container__lista-def-fecha{
 	color: rgb(37, 155, 149);
 	font-size: 1.1em;
 	font-weight: bold;
@@ -303,9 +305,14 @@ text-decoration: none;
 .cabecera__group--titulo-uno{
 	font-size: 2.5em;
 }
-.container__lista-author{
-	text-align: left;
+.cabecera__group--titulo-mayus{
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+.container__lista-def--author{
+	/*text-align: left;*/
 	color: #d03b00;
+	font-size: 1.1em;
 }
 
 
