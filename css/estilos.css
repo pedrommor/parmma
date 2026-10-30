@@ -268,7 +268,7 @@ text-decoration: none;
 
 .container__order-list--idioma,
 .container__order-list--time,
-.container__lista-def-fecha{
+.container__lista-def--fecha{
 	color: rgb(37, 155, 149);
 	font-size: 1.1em;
 	font-weight: bold;
