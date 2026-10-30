@@ -125,7 +125,13 @@ a{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	width:80%;
+}
+.container__segundo-post--video-container{
+	border: 0;
+	text-align: center;
+	align-items: center;
 }
 .container__primer-post--fecha{
 	text-transform: uppercase;
