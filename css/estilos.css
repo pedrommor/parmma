@@ -62,45 +62,38 @@ a{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2.5em;
   	font-weight:bolder;
-<<<<<<< HEAD
+
   	color: rgb(240,93,80);/*color para todos los enlaces menos flaticon*/
 }
 .cabecera__titulo:hover{/*poner este color en todos los enlaces de la página*/
-=======
+
   	color: rgb(240,93,80); /* color para todos los enlaces */
 }
 .cabecera__titulo:hover{/* poner este color en todos los enlaces de la página excepto flaticon*/
->>>>>>> 8c96f63fbf4f5d89b725dfa48d6f6eee750a8031
-
-	color: rgba(240,93,80,0.5);
+ color: rgba(240,93,80,0.5);
 }
-.cabecera__menu{
-<<<<<<< HEAD
-  padding: 15px;  
-  gap:1.5rem;
+.cabecera__menu{ 
+  gap:0.5rem;
 }
 .cabecera__menu--lista{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 0.5rem;
-	padding: 15px;	
+	
 	
 	
 }
 .cabecera__menu--activo{
 	font-style:italic;
-=======
-  padding: 15px; 
   
 }
 .cabecera__menu--lista{
-	padding: 15px;
+	
 	margin-top: 10px;
 }
 .cabecera__menu--activo{
 	font-style: italic;
->>>>>>> 8c96f63fbf4f5d89b725dfa48d6f6eee750a8031
 	font-weight:700;
 		
 }
@@ -112,18 +105,15 @@ a{
   color: rgba(0, 0, 25, 0.5);
 }
 .container{
-	width: 95%;
+	width: 80%;
 	margin: 10px auto;
 	padding: 20px 20px;
 	display:flex;
 	flex-direction: column;
 	align-items: flex-start;
 	line-height: 1.7;
-<<<<<<< HEAD
 	font-size: 1em;
-=======
 	font-size: 0.9em;
->>>>>>> 8c96f63fbf4f5d89b725dfa48d6f6eee750a8031
 	color:rgb(0, 0, 25);
 	gap:1rem;
 	}
@@ -158,7 +148,7 @@ a{
 }
 .container__primer-post--image{
 	max-width: 100%;
-	/*height: auto;*/
+	
 	display: block;
 }
 .container__segundo-post--video-container{
