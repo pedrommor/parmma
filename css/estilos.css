@@ -300,6 +300,9 @@ text-decoration: none;
 	color: rgb(240,93,80);
 }
 /* motivacion-premios*/
+.cabecera__group--titulo-uno{
+	font-size: 2.5em;
+}
 h4{
 	text-align: left;
 	color: #d03b00;
