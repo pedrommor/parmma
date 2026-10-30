@@ -303,25 +303,10 @@ text-decoration: none;
 .cabecera__group--titulo-uno{
 	font-size: 2.5em;
 }
-h4{
+.container__lista-author{
 	text-align: left;
 	color: #d03b00;
 }
-.figure_imagen_inicio{
-	width: 60%;
-	height: 200px;
-	display:block;
-}
-cite.serifa:not(article cite.serifa){
-	font-size: 0.8em;
-}
-.video-container{
 
-	width:50%;
-	cursor: pointer;
-	aspect-ratio: 16 / 9;
-	/*margin:0 auto 20 px auto;*/
-	display: flex;
-	justify-self: center;
 
-}
+
