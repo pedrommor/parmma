@@ -64,18 +64,19 @@ a{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2.5em;
   	font-weight:bolder;
-  	color: rgb(240,93,80);
+  	color: rgb(240,93,80); /* color para todos los enlaces */
 }
-.cabecera__titulo:hover{
+.cabecera__titulo:hover{/* poner este color en todos los enlaces de la página excepto flaticon*/
 
 	color: rgba(240,93,80,0.5);
 }
 .cabecera__menu{
-  padding: 15px;  
+  padding: 15px; 
   
 }
 .cabecera__menu--lista{
-	padding: 15px;	
+	padding: 15px;
+	margin-top: 10px;
 }
 .cabecera__menu--activo{
 	font-style:oblique;
