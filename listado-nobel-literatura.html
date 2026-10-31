@@ -11,7 +11,7 @@
 <header class="cabecera">
  <h1><a class="cabecera__titulo" href="index.html">Letras</a></h1>
    <nav class="cabecera__menu">
-            <ul class="cabecera_menu--lista">
+            <ul class="cabecera__menu--lista">
                 <li><a class="cabecera__menu--link" href="index.html">Bob Dylan, premio Nobel de literatura 2016</a></li>
                 <li class="cabecera__menu--activo">Premios Nobel de literatura <time datetime="2013">(2013</time>-<time datetime="2022">2022)</time></li>
                 <li><a class="cabecera__menu--link" href="motivacion-premios.html">Motivación de los premios <time datetime="2013">(2013</time>-<time datetime="2022">2022)</time></a></li>
@@ -19,12 +19,12 @@
         </nav>
 </header>
 <main class="container__listado">
-  <hgroup>
+  <header class="container__listado--cabecera">
   <h2 class="container__listado--titulo">Premios Nobel de literatura</h2>
   <h3><time datetime="2013">2013</time> - <time datetime="2022">2022</time></h3>
   <h3 class="container__listado--mayus">ordenados por el idioma de su producción literaria</h3>
-  </hgroup>
-  <ol class="container__order-list--alineacion">
+  </header>
+  <ul class="container__order-list--alineacion">
     <li class="container__order-list--idioma">Inglés
       <ul class="container__order-list--elementos">
           <li><time class="container__order-list--time" datetime="2013">2013</time>: <a class="containier__order-list--link" href="motivacion-premios.html#alice" title="Motivación Alice">Alice Munro</a></li>
@@ -56,9 +56,9 @@
           <li><time class="container__order-list--time" datetime="2019">2019</time>: <a class="containier__order-list--link" href="motivacion-premios.html#peter" title="Motivación Peter">Peter Handke</a></li>
         </ul>
     </li>
-  </ol>
-  <p class="container__parrafo--centrado menor">
-    Consultado en  <span lang="en"><a class="container__parrafo-link" href="https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-literature/" title="Todos los premios nobel de literatura" target="_blank">All Nobel Prizes in Literature</a></span>
+  </ul>
+  <p class="container__listado-parrafo--centrado">
+    Consultado en  <span lang="en"><a class="container__listado-parrafo--link" href="https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-literature/" title="Todos los premios nobel de literatura" target="_blank">All Nobel Prizes in Literature</a></span>
   </p>
 </main>
 <footer class="pie">

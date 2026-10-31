@@ -65,10 +65,10 @@ a{
 
   	color: rgb(240,93,80);/*color para todos los enlaces menos flaticon*/
 }
-.cabecera__titulo:hover{/*poner este color en todos los enlaces de la página*/
+/*.cabecera__titulo:hover{poner este color en todos los enlaces de la página
 
-  	color: rgb(240,93,80); /* color para todos los enlaces */
-}
+  	color: rgb(240,93,80);  color para todos los enlaces 
+}*/
 .cabecera__titulo:hover{/* poner este color en todos los enlaces de la página excepto flaticon*/
  color: rgba(240,93,80,0.5);
 }
@@ -80,22 +80,14 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	gap: 0.5rem;
-	
-	
-	
 }
 .cabecera__menu--activo{
 	font-style:italic;
-  
+	font-weight: 700;
 }
 .cabecera__menu--lista{
 	
 	margin-top: 10px;
-}
-.cabecera__menu--activo{
-	font-style: italic;
-	font-weight:700;
-		
 }
 .cabecera__menu--link{
 		
@@ -112,7 +104,6 @@ a{
 	flex-direction: column;
 	align-items: flex-start;
 	line-height: 1.7;
-	font-size: 1em;
 	font-size: 0.9em;
 	color:rgb(0, 0, 25);
 	gap:1rem;
@@ -135,35 +126,19 @@ a{
 	margin-top: 20px;
 	font-size: 1.5em;
 }
-.container__primer-post--image,
-.container__segundo-post--video-container
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	/*width:80%;*/
-	align-self: center;
-}
 .container__primer-post--image{
 	max-width: 100%;
 	
 	display: block;
 }
-.container__segundo-post--video-container{
-	border: 0;
-	text-align: center;
-	align-items: center;
-	gap:10px;
-}
+
 .container__primer-post--fecha{
 	text-transform: uppercase;
 	font-size: 8px;
 	margin-bottom: 10px;
 }
 .container__primer-post--pie-foto{
-color: #d03b00;
+color: rgb(240, 93, 80);
 text-decoration: none;
 }
 .container__primer-post--parrafo-negrita{
@@ -182,6 +157,23 @@ text-align: center;
 box-sizing: border-box;
 text-decoration: none;
 }
+.container__primer-post--image,
+.container__segundo-post--video-container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+}
+
+.container__segundo-post--video-container{
+	border: 0;
+	text-align: center;
+	align-items: center;
+	gap:10px;
+}
 .container__segundo-post--titular, 
 .container__tercer-post--titular-uno, 
 .container__tercer-post--titular-dos,
@@ -192,8 +184,7 @@ text-decoration: none;
 	
 }
 .container__cuarto-post--block{
-	margin-left: 40px;
-	margin-right: 50px;
+	margin: 20px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -222,7 +213,7 @@ text-decoration: none;
 .container__cuarto-post--inline-destacado{
 color: #d03b00;
 text-decoration: none;
-font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 .pie{
 	height: 15vh;
@@ -235,27 +226,25 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 
 /* listado-nobel-literatura */
-hgroup{
-	
-	line-height: 1.7;
-	text-align: center;
-}
+
 .container__listado{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-
+	max-width: 100%;
+	align-items:center;
+	/*align-content: center;*/
+	line-height: 1.7;
+	color:rgb(0, 0, 25);
 }
+.container__listado--cabecera{
 
+	line-height: 1.7;
+	text-align: center;
+}
 .container__listado--titulo{
 	font-size: 2.5em;
 	font-weight: bolder;
 }
-.container__order-list--idioma{
-	color: rgb(37, 155, 149);
-	font-size: 1.1em;
-}
-
 .container__listado--mayus{
 	margin-top: 10px;
 	margin-bottom: 40px;
@@ -264,9 +253,14 @@ hgroup{
 }
 .container__order-list--alineacion{
 	list-style-image: url(../img/idioma.png);
-	padding: 15px;
+	text-align: left;
+	margin:0 auto;
+	
 }
-
+.container__order-list--idioma{
+	margin-left: 0;
+	font-size: 1.1em;
+}
 .container__order-list--elementos{
 	list-style-type: square;
 	color:black;
@@ -279,27 +273,30 @@ hgroup{
 .container__order-list--idioma,
 .container__order-list--time,
 .container__lista-def--fecha{
-	color: rgb(37, 155, 149);
+	color: rgba(0, 0, 25, 0.5);
 	font-size: 1.1em;
 	font-weight: bold;
 	
 }
 
-.container__parrafo--centrado{
+.container__listado-parrafo--centrado{
 	text-align: center;
+
 }
-.container__parrafo-link
+.container__listado-parrafo--link
 {
-	color: #d03b00;
+	color: rgb(240, 93, 80);
 	font-size: 1.1em;
 }
 
 .containier__order-list--link
 {
-	color: #d03b00;
+	color: rgb(240, 93, 80);
 	font-size: 0.9em;
 }
-
+.containier__order-list--link:hover{
+	color:rgba(240, 93, 80, 0.5)
+}
 
 .pie__link 
 {
