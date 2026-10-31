@@ -41,7 +41,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*fin reset*/
+
+/*********fin reset**************/
 
 .principal{
 	font-family: Helvetica, Arial, sans-serif;
@@ -62,13 +63,9 @@ a{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2.5em;
   	font-weight:bolder;
-
   	color: rgb(240,93,80);/*color para todos los enlaces menos flaticon*/
 }
-/*.cabecera__titulo:hover{poner este color en todos los enlaces de la página
 
-  	color: rgb(240,93,80);  color para todos los enlaces 
-}*/
 .cabecera__titulo:hover{/* poner este color en todos los enlaces de la página excepto flaticon*/
  color: rgba(240,93,80,0.5);
 }
@@ -99,24 +96,26 @@ a{
 .container{
 	width: 80%;
 	margin: 10px auto;
-	padding: 20px 20px;
-	display:flex;
-	flex-direction: column;
-	align-items: flex-start;
 	line-height: 1.7;
 	font-size: 0.9em;
 	color:rgb(0, 0, 25);
-	gap:1rem;
+	
 	}
 .container__primer-post--centrado{
 	text-align: center;
 	box-sizing: border-box;
+	
+
 }
 .container__primer-post--titular{
 	font-size: 2.0em;
 	font-weight: bolder;
 	margin:15px;
 	line-height: 1.7;
+}
+.container__primer-post--parrafo{
+	max-width: 850px;
+	font-size: 1.1em;
 }
 .container__primer-post--siglas{
 	text-decoration: none;
@@ -126,11 +125,12 @@ a{
 	margin-top: 20px;
 	font-size: 1.5em;
 }
-.container__primer-post--image{
-	max-width: 100%;
-	
-	display: block;
+.container__parrafo{
+	line-height: 1.7;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
+
 
 .container__primer-post--fecha{
 	text-transform: uppercase;
@@ -145,10 +145,10 @@ text-decoration: none;
 	font-weight: bold;
 	font-size:1.1em;
 	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.container__parrafo{
-	padding: 10px 0;
-}
+
 .container__primer-post--menor-pie-foto{
 padding: 20px;
 font-size:xx-small;
@@ -211,8 +211,9 @@ text-decoration: none;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container__cuarto-post--inline-destacado{
-color: #d03b00;
-text-decoration: none;
+	
+	color: rgb(240, 93, 80);
+	text-decoration: none;
 
 }
 .pie{
@@ -230,8 +231,7 @@ text-decoration: none;
 .container__listado{
 	display: flex;
 	flex-direction: column;
-	max-width: 100%;
-	align-items:center;
+	max-width: 100%;	
 	/*align-content: center;*/
 	line-height: 1.7;
 	color:rgb(0, 0, 25);
@@ -241,34 +241,31 @@ text-decoration: none;
 	line-height: 1.7;
 	text-align: center;
 }
-.container__listado--titulo{
+.container__listado-cabecera--titulo{
 	font-size: 2.5em;
 	font-weight: bolder;
 }
-.container__listado--mayus{
+.container__listado-cabecera--mayus{
 	margin-top: 10px;
 	margin-bottom: 40px;
 	text-transform: uppercase;
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
+/*comienzo listas anidadas*/
 .container__order-list--alineacion{
 	list-style-image: url(../img/idioma.png);
-	text-align: left;
-	margin:0 auto;
+	margin-left: 37%;
+	margin-bottom: 10px;
 	
 }
 .container__order-list--idioma{
-	margin-left: 0;
+	
 	font-size: 1.1em;
 }
 .container__order-list--elementos{
 	list-style-type: square;
-	color:black;
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	color:black;	
 }
-
 
 .container__order-list--idioma,
 .container__order-list--time,
@@ -281,12 +278,17 @@ text-decoration: none;
 
 .container__listado-parrafo--centrado{
 	text-align: center;
-
+	font-size: 0.7em;
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 .container__listado-parrafo--link
 {
 	color: rgb(240, 93, 80);
 	font-size: 1.1em;
+}
+.container__listado-parrafo--link:hover{
+	color: rgba(240, 93, 80, 0.5);
 }
 
 .containier__order-list--link
@@ -297,7 +299,9 @@ text-decoration: none;
 .containier__order-list--link:hover{
 	color:rgba(240, 93, 80, 0.5)
 }
-
+.pie{
+	line-height: 1.7;
+}
 .pie__link 
 {
 	color:rgb(255, 255, 255);
@@ -308,7 +312,9 @@ text-decoration: none;
 {
 	color: rgb(240,93,80);
 }
+
 /* motivacion-premios*/
+
 .cabecera__group--titulo-uno{
 	font-size: 2.5em;
 }
@@ -316,11 +322,19 @@ text-decoration: none;
 	text-transform: uppercase;
 	font-size: 0.7em;
 }
-.container__lista-def--author{
-	/*text-align: left;*/
-	color: #d03b00;
-	font-size: 1.1em;
-}
 
+.container__lista-def{
+	line-height: 1.7;
+	margin: 10px 25% 20px 21%;	
+}
+.container__lista-def--author{
+	color: rgb(240, 93, 80);
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.container__lista-def--author:hover
+{
+	color: rgba(240, 93, 80, 0.5);
+}
 
 
