@@ -47,13 +47,14 @@ table {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     line-height: 1.7;
+    
 }
 .cabecera__titulo-principal{
     font-size: 1.2em;
     color: rgba(0, 0, 25, 0.25);
-
+    text-align: center;
 }
 .navegacion__lista-practicas:hover{
-
+    max-width: 80%;;
     color:rgba(0, 0, 25, 0.5);
 }
