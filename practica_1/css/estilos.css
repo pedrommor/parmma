@@ -1,0 +1,340 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********fin reset**************/
+
+.principal{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	min-height: 100vh;
+}
+a{
+	text-decoration: none;
+}
+.cabecera{
+  text-align:center;
+  padding: 20px;
+  text-decoration: none;
+  
+}
+
+.cabecera__titulo{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 2.5em;
+  	font-weight:bolder;
+  	color: rgb(240,93,80);/*color para todos los enlaces menos flaticon*/
+}
+
+.cabecera__titulo:hover{/* poner este color en todos los enlaces de la página excepto flaticon*/
+ color: rgba(240,93,80,0.5);
+}
+.cabecera__menu{ 
+  gap:0.5rem;
+}
+.cabecera__menu--lista{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.cabecera__menu--activo{
+	font-style:italic;
+	font-weight: 700;
+}
+.cabecera__menu--lista{
+	
+	margin-top: 10px;
+}
+.cabecera__menu--link{
+		
+	color: rgb(0, 0, 25);
+}
+.cabecera__menu--link:hover{
+  color: rgba(0, 0, 25, 0.5);
+}
+.container{
+	width: 80%;
+	margin: 10px auto;
+	line-height: 1.7;
+	font-size: 0.9em;
+	color:rgb(0, 0, 25);
+	
+	}
+.container__primer-post--centrado{
+	text-align: center;
+	box-sizing: border-box;
+	
+
+}
+.container__primer-post--titular{
+	font-size: 2.0em;
+	font-weight: bolder;
+	margin:15px;
+	line-height: 1.7;
+}
+.container__primer-post--parrafo{
+	max-width: 850px;
+	font-size: 1.1em;
+}
+.container__primer-post--siglas{
+	text-decoration: none;
+}
+.container__primer-post--author
+{
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+.container__parrafo{
+	line-height: 1.7;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.container__primer-post--fecha{
+	text-transform: uppercase;
+	font-size: 8px;
+	margin-bottom: 10px;
+}
+.container__primer-post--pie-foto{
+color: rgb(240, 93, 80);
+text-decoration: none;
+}
+.container__primer-post--parrafo-negrita{
+	font-weight: bold;
+	font-size:1.1em;
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.container__primer-post--menor-pie-foto{
+padding: 20px;
+font-size:xx-small;
+width: 100%;
+text-align: center;
+box-sizing: border-box;
+text-decoration: none;
+}
+.container__primer-post--image,
+.container__segundo-post--video-container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+}
+
+.container__segundo-post--video-container{
+	border: 0;
+	text-align: center;
+	align-items: center;
+	gap:10px;
+}
+.container__segundo-post--titular, 
+.container__tercer-post--titular-uno, 
+.container__tercer-post--titular-dos,
+.container__cuarto-post--titular
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	
+}
+.container__cuarto-post--block{
+	margin: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container__segundo-post--fecha{
+	font-size: 0.8em;
+}
+.container__segundo-post--serifa,
+.container__tercer-post--serifa,
+.container__cuarto-post--serifa,
+.container__lista-def--serifa
+{
+	font-family: Georgia,'Times New Roman', Times, serif;
+	font-style: italic;
+}
+.container__cuarto-post--parrafo-reducido{
+	margin-top:10px;
+}
+.container__cuarto-post--firma,
+.container__cuarto-post--reducido,
+.container__cuarto-post--parrafo-reducido{
+	font-size: small;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container__cuarto-post--inline-destacado{
+	
+	color: rgb(240, 93, 80);
+	text-decoration: none;
+
+}
+.pie{
+	height: 15vh;
+	text-align: center;
+	align-content: center;
+	background-color: rgb(0, 0, 25);
+	color:rgb(255, 255, 255);
+}
+
+
+
+/* listado-nobel-literatura */
+
+.container__listado{
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;	
+	/*align-content: center;*/
+	line-height: 1.7;
+	color:rgb(0, 0, 25);
+}
+.container__listado--cabecera{
+
+	line-height: 1.7;
+	text-align: center;
+}
+.container__listado-cabecera--titulo{
+	font-size: 2.5em;
+	font-weight: bolder;
+}
+.container__listado-cabecera--mayus{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+/*comienzo listas anidadas*/
+.container__order-list--alineacion{
+	list-style-image: url(../img/idioma.png);
+	margin-left: 37%;
+	margin-bottom: 10px;
+	
+}
+.container__order-list--idioma{
+	
+	font-size: 1.1em;
+}
+.container__order-list--elementos{
+	list-style-type: square;
+	color:black;	
+}
+
+.container__order-list--idioma,
+.container__order-list--time,
+.container__lista-def--fecha{
+	color: rgba(0, 0, 25, 0.5);
+	font-size: 1.1em;
+	font-weight: bold;
+	
+}
+
+.container__listado-parrafo--centrado{
+	text-align: center;
+	font-size: 0.7em;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.container__listado-parrafo--link
+{
+	color: rgb(240, 93, 80);
+	font-size: 1.1em;
+}
+.container__listado-parrafo--link:hover{
+	color: rgba(240, 93, 80, 0.5);
+}
+
+.containier__order-list--link
+{
+	color: rgb(240, 93, 80);
+	font-size: 0.9em;
+}
+.containier__order-list--link:hover{
+	color:rgba(240, 93, 80, 0.5)
+}
+.pie{
+	line-height: 1.7;
+}
+.pie__link 
+{
+	color:rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.pie__link:hover
+{
+	color: rgb(240,93,80);
+}
+
+/* motivacion-premios*/
+
+.cabecera__group--titulo-uno{
+	font-size: 2.5em;
+}
+.cabecera__group--titulo-mayus{
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+.container__lista-def{
+	line-height: 1.7;
+	margin: 10px 25% 20px 21%;	
+}
+.container__lista-def--author{
+	color: rgb(240, 93, 80);
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.container__lista-def--author:hover
+{
+	color: rgba(240, 93, 80, 0.5);
+}
+
+
