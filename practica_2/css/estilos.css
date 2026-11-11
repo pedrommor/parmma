@@ -45,7 +45,7 @@ table {
 
 /*********fin reset**************/
 .principal{
-    max-height: 100vh;
+    min-height: 100vh;
     background-image: url('../img/home-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,11 @@ table {
     letter-spacing: 10px;
     
 }
-
+.pie{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
 .pie__menu{
     margin-top:50%;
     display: flex;
