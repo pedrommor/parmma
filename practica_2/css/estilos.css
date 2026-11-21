@@ -44,6 +44,7 @@ table {
 }
 
 /*********fin reset**************/
+
 .principal{
     max-height: 100vh;
     background-image: url('../img/home-hero.jpg');
@@ -101,13 +102,18 @@ table {
     letter-spacing: 10px;
     
 }
+.pie{
 
+    position:fixed;
+    bottom:1em;
+}
 .pie__menu{
     margin-top:50%;
     display: flex;
     justify-content: center;
 }
 .pie__menu--lista-link{
+    
     font-size: 0.8rem;
 }
 .pie__principal{
@@ -118,6 +124,10 @@ table {
     font-weight: 400;
     gap: 10px;
     font-size: 0.6rem;
-    
+
+}
+.pie__principal--parrafo-link{
+    color:#FFFFFF;
+    text-decoration: none;
     
 }
