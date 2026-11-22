@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* reset meyer*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,10 +46,14 @@ table {
 
 /*********fin reset**************/
 
+
+
 .principal{
     max-height: 100vh;
     background-image: url('../img/home-hero.jpg');
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     
     display:flex;
@@ -57,17 +62,24 @@ table {
     flex-direction: column;
     color:#FFFFFF;
     font-family:'Work Sans', sans-serif;
+    font-weight: 400;
 }
 .cabecera{
-    margin:20px;
-    
+    margin:20px;   
         
 }
-.cabecera__menu--lista,.pie__menu--lista{
-    display: flex;
-    flex-direction: row; 
-    padding: 10px;
-    gap: 10px;
+.cabecera__menu--item,
+.pie__menu--item{
+
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+.cabecera__menu--lista-link,
+.pie__menu--lista-link,
+.pie__principal--parrafo-link{
+   
+    text-decoration: none;
+    color:#FFFFFF;
     
 }
 .cabecera__menu--lista-link{
@@ -92,42 +104,230 @@ table {
 
 }
 .container__principal--central-taller{
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 700;
     letter-spacing: -10px;
 }
 .container__principal--central-modela{
     font-size: 1.5rem;
     font-weight:700;    
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     
 }
 .pie{
-
     position:fixed;
     bottom:1em;
 }
-.pie__menu{
-    margin-top:50%;
-    display: flex;
-    justify-content: center;
-}
-.pie__menu--lista-link{
-    
+
+.pie .pie__menu--item{
+    margin:1em 0 2em 0;
     font-size: 0.8rem;
 }
 .pie__principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-    font-weight: 400;
-    gap: 10px;
+    
+    display: inline;
+    padding: 0 0 0 0;
     font-size: 0.6rem;
 
 }
-.pie__principal--parrafo-link{
+.pie .pie__principal--parrafo{
+    text-align: center;
     color:#FFFFFF;
     text-decoration: none;
     
+}
+.pie .pie__principal--parrafo-link:hover{
+
+    color: #6BDEC8;
+}
+.pie .pie__principal--parrafo-copy{
+    text-align: center;
+    margin: 0 0 1em 0;
+    font-size: 0.6rem;
+}
+/*que es la ceramica*/
+.ceramica__principal,
+.cursos__principal{
+
+    background-color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 400;
+    
+}
+.ceramica__principal .cabecera__menu--item .cabecera__menu--lista-link[href*=ceramica],
+.cursos__principal .cabecera__cursos .cabecera__menu--lista-link[href^=cursos]{
+    border-bottom: solid 2px;
+    padding-bottom:5px;
+}
+ 
+
+.ceramica__principal .container__principal--ceramica{
+    margin-left: 15%;
+    margin-right: 15%;
+    gap:15px;
+    padding: 20px;
+}
+.cabecera__ceramica, .cabecera__cursos{
+    text-align: center;
+    
+}
+.cabecera__ceramica--img{
+    width: 1%;
+    margin-right: 0.5em;
+}
+.cabecera__ceramica--titular{
+    font-weight: 700;
+    font-size: 2rem;
+    padding:10px;
+}
+.cabecera__ceramica,.pie__ceramica, .cabecera__cursos{
+    height: 15vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 0 1em 0 0;
+}
+.container__principal--ceramica,
+.container__principal--cursos{
+
+    margin-top: 5%;
+    padding: 0 2em 0 0;
+    line-height: 1.7em;
+    
+}
+.container__principal--ceramica-titulo, 
+.container__principal--cursos-titulo,
+.cursos__titulo--anyo{
+    text-align: center;
+    margin: 1%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.container__principal--ceramica-seccion{
+    gap: 10px;
+    
+}
+.seccion__videocontainer{
+    width: fit-content;
+    max-width: 100%;    
+    margin: 3em auto;
+    
+}
+.seccion__videocontainer--caption{
+    margin-top: 8px;
+    text-align: left;
+    font-size: 0.7em;
+}
+.section__videocontainer--link{
+
+    position: relative;
+    display:block;
+    width: 100%;
+    
+}
+.seccion__videocontainer--link img{
+
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.seccion__videocontainer--link::after{
+
+    content:"▶";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: rgba(33, 33, 33, 0.85);
+    color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    padding-left: 4px;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+}
+.seccion__videocontainer--link:hover::after {
+    background-color: #ff0000;
+    transform: translate(-50%, -50%) scale(1.08);
+}
+.seccion__videocontainer--link:hover img {
+    transform: scale(1.03);
+}
+.seccion__articulo--titulo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    border-bottom: solid 1px;
+    padding-bottom: 5px;
+}
+.seccion__articulo--parrafo{
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.articulo__segundopost--negrita{
+    font-weight: 700;
+}
+.seccion__articulo--segundopost-lista{
+    list-style-type: square;
+    margin-left: 3em;
+}
+.seccion__articulo--tercerpost-term{
+    margin-left: 3em;
+    font-weight: 700;
+}
+.seccion__articulo--tercerpost-def{
+    margin-left: 5em;
+}
+.pie__ceramica{
+    margin-top:1rem;
+}
+.pie__ceramica .pie__menu--lista{
+    
+    font-size: 0.8rem;
+    margin: 1em 0 0 15.6rem;
+}
+.pie__ceramica .pie__menu--lista .pie__menu--item{
+    margin: 1em 0 0 0;
+}
+.pie__ceramica .pie__principal--parrafo-copy{
+    font-size: 0.7em;
+    margin: 2rem 0 0 22.4em;
+    
+}
+.seccion__parrafo--final{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+.seccion__parrafo--final-link{
+    text-decoration: none;
+    color: #942C0B;
+    border-bottom: 1px dotted;
+}
+.seccion__parrafo--final-link:hover{
+    border-bottom: 1px solid;
+}
+/*Cursos*/
+.cursos__titulo--anyo{
+    font-size: 2.3em;
+}
+.container__principal--cursos{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+}
+.cursos_img{
+    display: flex;
+    justify-content: center;
+    width: 20%;
 }
