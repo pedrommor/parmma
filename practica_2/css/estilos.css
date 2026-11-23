@@ -90,6 +90,7 @@ table {
 .pie__principal--parrafo-link:hover
 {
     color:#6BDEC8;
+    
 }
 .container__principal{
     margin-top: 5%;
@@ -155,9 +156,11 @@ table {
     
 }
 .ceramica__principal .cabecera__menu--item .cabecera__menu--lista-link[href*=ceramica],
-.cursos__principal .cabecera__cursos .cabecera__menu--lista-link[href^=cursos]{
-    border-bottom: solid 2px;
+.cursos__principal .cabecera__cursos .cabecera__menu--lista-link[href^=cursos],
+.inscripcion__principal .cabecera__menu--item .cabecera__menu--lista-link[href^=inscripcion]{
+    border-bottom: solid 2px #6BDEC8;
     padding-bottom:5px;
+    
 }
  
 
@@ -171,16 +174,24 @@ table {
     text-align: center;
     
 }
-.cabecera__ceramica--img{
-    width: 1%;
+.cabecera__ceramica--img,
+.cabecera__cursos--img{
+    width: 30px;
     margin-right: 0.5em;
 }
-.cabecera__ceramica--titular{
+.cabecera__ceramica--titular,
+.cabecera__cursos--titular{
     font-weight: 700;
     font-size: 2rem;
     padding:10px;
 }
-.cabecera__ceramica,.pie__ceramica, .cabecera__cursos{
+.cabecera__ceramica,
+.cabecera__cursos,
+.cabecera__inscripcion,
+.pie__ceramica,
+.pie__cursos,
+.pie__inscripcion
+{
     height: 15vh;
     background-color: #000000;
     color: #FFFFFF;
@@ -235,18 +246,19 @@ table {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-.seccion__videocontainer--link::after{
+.seccion__videocontainer--link::before{
 
     content:"▶";
-    position:absolute;
+    position:relative;
     top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    left:45%;
+    transform: translate(0%, -50%);
     width: 68px;
     height: 48px;
     background-color: rgba(33, 33, 33, 0.85);
     color: #ffffff;
     border-radius: 12px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,9 +268,9 @@ table {
     transition: background-color 0.2s ease, transform 0.2s ease;
 
 }
-.seccion__videocontainer--link:hover::after {
+.seccion__videocontainer--link:hover::before {
     background-color: #ff0000;
-    transform: translate(-50%, -50%) scale(1.08);
+    transform: translate(0%, -50%) scale(1.08);
 }
 .seccion__videocontainer--link:hover img {
     transform: scale(1.03);
@@ -289,18 +301,22 @@ table {
 .seccion__articulo--tercerpost-def{
     margin-left: 5em;
 }
-.pie__ceramica{
+.pie__ceramica, 
+.pie__cursos{
     margin-top:1rem;
 }
-.pie__ceramica .pie__menu--lista{
+.pie__ceramica .pie__menu--lista,
+.pie__cursos .pie__menu--lista{
     
     font-size: 0.8rem;
     margin: 1em 0 0 15.6rem;
 }
-.pie__ceramica .pie__menu--lista .pie__menu--item{
+.pie__ceramica .pie__menu--lista .pie__menu--item,
+.pie__cursos .pie__menu--lista .pie__menu--item{
     margin: 1em 0 0 0;
 }
-.pie__ceramica .pie__principal--parrafo-copy{
+.pie__ceramica .pie__principal--parrafo-copy,
+.pie__cursos .pie__principal--parrafo-copy{
     font-size: 0.7em;
     margin: 2rem 0 0 22.4em;
     
@@ -309,25 +325,79 @@ table {
     margin-top: 1rem;
     font-size: 0.8rem;
 }
-.seccion__parrafo--final-link{
+.seccion__parrafo--final-link,
+.cursos__img--piefoto-link{
     text-decoration: none;
     color: #942C0B;
     border-bottom: 1px dotted;
 }
-.seccion__parrafo--final-link:hover{
+.seccion__parrafo--final-link:hover,
+.cursos__img--piefoto-link:hover{
+    color: #6BDEC8;
     border-bottom: 1px solid;
 }
 /*Cursos*/
+.cursos__principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
 .cursos__titulo--anyo{
     font-size: 2.3em;
 }
 .container__principal--cursos{
-  display: flex;
-  flex-direction: column;
- justify-content: center;
+    margin: 0 15% 0 15%;
 }
-.cursos_img{
-    display: flex;
-    justify-content: center;
-    width: 20%;
+.cursos__articulo--primerpost{
+    margin: 0 25% 0 25%;
+}
+.cursos__img{
+    max-width: 95%;
+    height: auto;
+}
+.cursos__img--piefoto{
+    font-size: 0.6rem;
+    
+}   
+
+.cursos__img--piefoto-link:hover{
+    color: #6BDEC8;
+    
+}
+.cursos__parrafo{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.cursos__tabla{
+    margin: 1rem 0 0 0;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    
+}
+.cursos__tabla--titulo{
+    border-top: 1px solid; 
+    border-bottom: 1px solid;
+} 
+th, td:last-child[colspan]{
+    border-bottom: 1px solid;
+}
+tr:nth-child(2n+3){
+    background-color: #6BDEC8;
+}
+.tabla__fila--titulo{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 0.3rem;
+}
+.cursos__tabla--titulo{
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+.tabla__fila--cabecera,
+td:last-child[colspan]{
+    padding-left: 0.3rem;
 }
