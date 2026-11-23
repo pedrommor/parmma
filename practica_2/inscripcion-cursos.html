@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>el taller - Cursos de cerámica</title>
+    <title>el taller - Inscripción cursos de cerámica</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body class="inscripcion__principal">
-    <header class="cabecera__inscripcion">
-        
-        <h1 class="cabecera__cursos--titular"><a href="index.html"><img class="cabecera__cursos--img" src="img/isologo-taller.png" alt="logo empresa"></a>el taller</h1>
+    <header class="cabecera__inscripcion">     
+        <h1 class="cabecera__inscripcion--titular"><a href="index.html"><img class="cabecera__cursos--img" src="img/isologo-taller.png" alt="logo empresa"></a>el taller</h1>
         <nav class="cabecera__menu">
             <ul class="cabecera__menu--lista">
                 <li class="cabecera__menu--item"><a class="cabecera__menu--lista-link" href="que-es-la-ceramica.html">CERÁMICA</a></li>
@@ -18,8 +17,48 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container__principal--inscripcion">
+        <section class="seccion__inscripcion">
+            <h2 class="seccion__inscripcion--titulo">Inscripción a los cursos</h2>
+        <article class="inscripcion__articulo">
+            <h3 class="inscripcion__articulo--titulo">Los campos marcados con * son obligatorios</h3>
+            <form action="#" metho="post">
+                <fieldset class="inscripcion__detalles">
+                    <legend>Detalles de la inscripción</legend>
+                    <label for="name">Nombre<sup>*</sup></label>
+                    <input type="text" id="name" name="name" placeholder="Ej. Tu nombre" autofocus required>
+                    <label for="surname">Apellidos<sup>*</sup></label>
+                    <input type="text" id="surname" name="surname" placeholder="Ej. Tus apellidos" autofocus required>
+                    <label for="email">Correo Electrónico<sup>*</sup></label>
+                    <input type="email" id="email" name="email" placeholder="Ej. mail@mail.com" required>
+                    <label for="tel">Teléfono<sup>*</sup></label>
+                    <input type="tel" id="telf" name="telf" placeholder="666 666 666" patern="^\s[0-9]{3}\s[0-9]{3}\s[0-9]{3}$" requiered>
+                    <label for="birthdate">Fecha de nacimiento<sup>*</sup></label>
+                    <input type="datetime-local" id="birthdate" name="birthdate" required>
+                    <label for="curso">Curso<sup>*</sup></label>
+                    <select id="curso" name="curso" required>
+                        <option value="sin_valor">Selecciona un curso</option>
+                        <option value="torno">Torno</option>
+                        <option value="ceramica">Cerámica</option>
+                        <option value="modelado">Modelado</option>
+                        <option value="esmaltes">Esmaltes</option>
+                        <option value="joyeria">Joyería Cerámica</option>
+                    </select>
+                </fieldset>
+                <fieldset class="inscripcion__otras">
+                    <legend>Otras informaciones</legend>
+                    <fieldset class="inscripcion__otras">
+                        <legend>¿Has hecho otros cursos con nosotros?</legend>
+                        <input type="radio" name="cursosnosotros" value="si"> Si
+                        <input type="radio" name="cursosnosotros" value="no"> No
+                    </fieldset>
+                    <p>¿Quieres compartir o preguntar algo?</p>
 
+                </fieldset>
+            </form>
+
+        </article>
+        </section>
 
     </main>
 

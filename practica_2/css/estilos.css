@@ -148,7 +148,8 @@ table {
 }
 /*que es la ceramica*/
 .ceramica__principal,
-.cursos__principal{
+.cursos__principal,
+.inscripcion__principal{
 
     background-color: #FFFFFF;
     font-family: 'Work Sans', sans-serif;
@@ -164,13 +165,17 @@ table {
 }
  
 
-.ceramica__principal .container__principal--ceramica{
-    margin-left: 15%;
-    margin-right: 15%;
+.ceramica__principal .container__principal--ceramica,
+.inscripcion__principal .container__principal--inscripcion,
+.cursos__principal .container__principal--cursos{
+    margin: 0 15% 0 15%;
+   
     gap:15px;
     padding: 20px;
 }
-.cabecera__ceramica, .cabecera__cursos{
+.cabecera__ceramica, 
+.cabecera__cursos, 
+.cabecera__inscripcion{
     text-align: center;
     
 }
@@ -180,7 +185,8 @@ table {
     margin-right: 0.5em;
 }
 .cabecera__ceramica--titular,
-.cabecera__cursos--titular{
+.cabecera__cursos--titular,
+.cabecera__inscripcion--titular{
     font-weight: 700;
     font-size: 2rem;
     padding:10px;
@@ -190,15 +196,15 @@ table {
 .cabecera__inscripcion,
 .pie__ceramica,
 .pie__cursos,
-.pie__inscripcion
-{
+.pie__inscripcion{
     height: 15vh;
     background-color: #000000;
     color: #FFFFFF;
     padding: 0 1em 0 0;
 }
 .container__principal--ceramica,
-.container__principal--cursos{
+.container__principal--cursos,
+.container__principal--inscripcion{
 
     margin-top: 5%;
     padding: 0 2em 0 0;
@@ -207,7 +213,8 @@ table {
 }
 .container__principal--ceramica-titulo, 
 .container__principal--cursos-titulo,
-.cursos__titulo--anyo{
+.cursos__titulo--anyo,
+.seccion__inscripcion--titulo{
     text-align: center;
     margin: 1%;
     font-weight: 700;
@@ -302,21 +309,25 @@ table {
     margin-left: 5em;
 }
 .pie__ceramica, 
-.pie__cursos{
+.pie__cursos,
+.pie__inscripcion{
     margin-top:1rem;
 }
 .pie__ceramica .pie__menu--lista,
-.pie__cursos .pie__menu--lista{
+.pie__cursos .pie__menu--lista,
+.pie__inscripcion .pie__menu--lista{
     
     font-size: 0.8rem;
     margin: 1em 0 0 15.6rem;
 }
 .pie__ceramica .pie__menu--lista .pie__menu--item,
-.pie__cursos .pie__menu--lista .pie__menu--item{
+.pie__cursos .pie__menu--lista .pie__menu--item,
+.pie__inscripcion .pie__menu--lista .pie__menu--item{
     margin: 1em 0 0 0;
 }
 .pie__ceramica .pie__principal--parrafo-copy,
-.pie__cursos .pie__principal--parrafo-copy{
+.pie__cursos .pie__principal--parrafo-copy,
+.pie__inscripcion .pie__principal--parrafo-copy{
     font-size: 0.7em;
     margin: 2rem 0 0 22.4em;
     
@@ -347,9 +358,7 @@ table {
 .cursos__titulo--anyo{
     font-size: 2.3em;
 }
-.container__principal--cursos{
-    margin: 0 15% 0 15%;
-}
+
 .cursos__articulo--primerpost{
     margin: 0 25% 0 25%;
 }
@@ -400,4 +409,52 @@ tr:nth-child(2n+3){
 .tabla__fila--cabecera,
 td:last-child[colspan]{
     padding-left: 0.3rem;
+}
+/*formulario inscripcion*/
+.inscripcion__articulo--titulo{
+    text-align:initial;
+    margin-left: 25%;
+    font-size: 0.7rem;
+}
+form{
+    margin: 0 0 2em 25%;
+    max-width: 50%;
+    font-size: 0.7em;
+}
+.inscripcion__detalles{
+    border: 1px solid #000000;
+    padding: 15px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    column-gap: 0.5em;
+    row-gap:0.4em;
+    margin: 0 auto;
+}
+legend{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+label,input,select{
+    width: 20.286em;
+    height: 2em;    
+    border-radius: 0;
+}
+label:nth-of-type(odd),
+input:nth-of-type(odd){
+    grid-column: 1;
+    
+}
+label:nth-of-type(even),
+input:nth-of-type(even){
+    grid-column: 2;
+   
+}
+input[type="radio"]{
+    display: inline;
+}
+.inscripcion__otras{
+    border: 1px solid #000000;
+    padding: 15px;
 }
