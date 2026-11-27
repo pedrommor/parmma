@@ -312,6 +312,7 @@ table {
 .pie__cursos,
 .pie__inscripcion{
     margin-top:1rem;
+    align-items:center;
 }
 .pie__ceramica .pie__menu--lista,
 .pie__cursos .pie__menu--lista,
@@ -378,6 +379,9 @@ table {
 .cursos__parrafo{
     font-weight: 700;
     font-size: 1.5rem;
+}
+.cursos__container-tabla{
+    overflow-y: scroll;
 }
 .cursos__tabla{
     margin: 1rem 0 0 0;
